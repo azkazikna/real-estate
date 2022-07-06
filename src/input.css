@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] bg-black block mb-2;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    right:10px;
+    padding: 30px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+    display: block;
+}
+
+.swiper-slide {
+    @apply text-center;
+}
+
+.testi-card {
+    @apply px-7 py-5 !important;
+}
